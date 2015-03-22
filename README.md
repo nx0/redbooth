@@ -10,17 +10,17 @@ The application has three parts:
 
 ## Start the instance
 Start unicorn dameon: 
- unicorn_rails -c /var/www/rest_api/config/unicorn.rb -D
+* # unicorn_rails -c /var/www/rest_api/config/unicorn.rb -D
 Start nginx server:
- /etc/init.d/nginx start
+* # /etc/init.d/nginx start
 
 ## Stop the instance
 Stop nginx daemon:
- /etc/init.d/nginx stop
+* # /etc/init.d/nginx stop
 Stop unicorn daemon:
- ps faux | grep unicorn | grep -v grep | awk '{ print $2 }' | head -n 1 | xargs kill
+* # ps faux | grep unicorn | grep -v grep | awk '{ print $2 }' | head -n 1 | xargs kill
 
 
 ## (Re) provisioning
-Just launch the installer.sh 
+Just launch the: installer.sh 
 
