@@ -9,7 +9,10 @@ The application has three parts:
 #INSTALL INSTRUCTIONS
 ## Automation
 The whole process is automated thanks to standalone puppet manifest (redbooth_install) folder
-Just launch: puppet apply redbooth_install/redbooth_install.pp
+
+Just launch: 
+* # puppet apply redbooth_install/redbooth_install.pp
+
 Before, you need to set up two enviroment variables used by templates in puppet manifest:
 * export FACTER_MYSQL_PWD=password # Database password
 * export HTTP_IP=127.0.01 # Nginx listen password
