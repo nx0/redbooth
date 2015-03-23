@@ -15,7 +15,7 @@ Just launch:
 
 Before, you need to set up two enviroment variables used by templates in puppet manifest:
 * export FACTER_MYSQL_PWD=password # Database password
-* export HTTP_IP=127.0.01 # Nginx listen password
+* export FACTER_HTTP_IP=127.0.01 # Nginx listen password
 
 and change the default "template dir" in /etc/puppet/puppet.conf
 example:
